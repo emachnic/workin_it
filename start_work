@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require 'yaml'
+
+config = YAML::load(File.open('config.yml'))
+
+config['applications'].each do |app_name|
+  `open -a "#{app_name}.app"`
+end
+
+config['urls'].each do |url|
+  `open #{url}`
+end

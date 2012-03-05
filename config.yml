@@ -1,0 +1,11 @@
+applications: 
+  - "Google Chrome Canary"
+  - "Propane"
+  - "Skype"
+  - "Limechat"
+  - "iChat"
+
+urls:
+  - "http://support-dashboard.engineyard.com"
+  - "https://cloud.engineyard.com/admin/environments"
+  - "https://managed-alerts.engineyard.com/dashboard"

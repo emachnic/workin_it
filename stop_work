@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require 'yaml'
+
+config = YAML::load(File.open('config.yml'))
+
+config['applications'].each do |app_name|
+  `osascript -e "tell application \\"#{app_name}\\" to quit"`
+end
